@@ -42,6 +42,10 @@ const Coin = () => {
       } catch (err) {
         seterror(true);
         setloding(false);
+
+        if(err){
+          <Error />
+        }
       }
     };
     fecthcoins();
