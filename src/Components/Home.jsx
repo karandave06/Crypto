@@ -25,7 +25,7 @@ transition ={{
 }}
 >
 
-    <Image w={'full'} h={'full'} objectFit={'contain'} filter={"grayscale(1)"} src="../../public/btc.png"/>
+    <Image w={'full'} h={'full'} objectFit={'contain'} filter={"grayscale(1)"} src="https://static.currency.com/img/media/bitcoin.dd8a16.png"/>
 </motion.div>
 
     <Text  fontSize={'6xl'} textAlign={'center'} fontWeight={'thin'} color={'whiteAlpha.800'} mt={'-20'}>
