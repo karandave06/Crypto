@@ -26,6 +26,7 @@ import axios from "axios";
 import Charts from "./Charts";
 
 const Coindetails = () => {
+
   const params = useParams();
 
   const [coin, setcoin] = useState([]);
@@ -91,6 +92,8 @@ const Coindetails = () => {
     const fecthcoins = async () => {
       try {
         const { data } = await axios.get(`${server}/coins/${params.id}`);
+
+        console.log(data,  'this is for knowladge')
 
         const { data: chartData } = await axios.get(
           `${server}/coins/${params.id}/market_chart?vs_currency=${currancy}&days=${days}`
